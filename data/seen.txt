@@ -1,0 +1,2 @@
+# Candidates already proposed by the watcher (one key per line: DOI, arxiv:ID or title:...).
+# Maintained automatically — the watcher never proposes these again.

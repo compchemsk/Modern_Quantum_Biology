@@ -1,0 +1,20 @@
+# ---------------------------------------------------------------------------
+#  Site settings — the ONLY place the repository name and contact details live.
+#  Change a value here, push, and the "Build & validate" workflow regenerates
+#  README, CITATION, RESOURCES, the issue-form links and the website data.
+# ---------------------------------------------------------------------------
+
+owner: compchemsk                 # your GitHub username
+repo: Modern_Quantum_Biology      # repository name, exactly as on GitHub (case-sensitive)
+
+title: BioQubit Atlas
+tagline: The literature on biological qubits and spin-based quantum biology, curated by hand and kept up to date by a daily watcher.
+
+curator:
+  name: Soumyajit Karmakar
+  affiliation: Department of Chemistry, IIT Kharagpur
+  website: https://sites.google.com/view/compchemsk/
+  scholar: https://scholar.google.com/citations?user=7H-o4dgAAAAJ
+  # Email is split so simple address-harvesting bots don't find it in the page source.
+  email_user: soumyajitkarmakar.iit
+  email_domain: gmail.com

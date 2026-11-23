@@ -1,0 +1,37 @@
+# ⚛️🧬 ${title}
+
+**${tagline}**
+
+[![Website](https://img.shields.io/badge/open-the%20website-7456e5)](${pages_url})
+[![Watcher](${repo_url}/actions/workflows/watch.yml/badge.svg)](${repo_url}/actions/workflows/watch.yml)
+[![Suggest a paper](https://img.shields.io/badge/suggest-a%20paper-ffc578)](${repo_url}/issues/new?template=suggest-paper.yml)
+[![BibTeX](https://img.shields.io/badge/download-BibTeX-59dfb0)](bibliography/bioqubits.bib)
+
+🔎 **[Search, filter and explore everything on the website](${pages_url})**  
+📚 [Books, reviews & software](RESOURCES.md) · 🤖 [How it updates](#-how-it-stays-up-to-date) · ✍️ [Contribute](CONTRIBUTING.md) · 🔒 [Security](SECURITY.md)
+
+Proteins can now be operated as spin qubits. A fluorescent protein has been initialised, controlled and read out optically. Engineered flavoproteins report spin resonance inside living cells. Radical pairs in cryptochromes are probed with ultrafast and single-molecule methods. This repository gathers the key papers in one place, sorted by theme.
+
+**Curated by** [${curator_name}](${curator_website}), ${curator_affiliation}. Anyone can suggest a paper, either through the website's form (by email or GitHub) or with a [GitHub issue](${repo_url}/issues/new?template=suggest-paper.yml).
+
+<!-- ATLAS:START -->
+<!-- ATLAS:END -->
+
+---
+
+## 🤖 How it stays up to date
+
+1. **Every day at 06:47 IST** a GitHub Action searches OpenAlex (all journals), arXiv and Europe PMC (PubMed + bioRxiv).
+2. Each new paper is scored for relevance. It is kept only if it appeared in a listed journal or on a preprint server and hasn't been seen before. The settings are in [`config/watch.yaml`](config/watch.yaml).
+3. Every candidate becomes a **GitHub issue**, and the curator is notified.
+4. The curator replies **`/approve`**, and the paper is added: README, BibTeX and website rebuild themselves. Or the curator replies **`/reject`**, and the paper is never proposed again.
+
+**Nothing is added without the curator's approval.** Only the curator's GitHub account can approve. Suggestions and comments from anyone else are ignored by the robot.
+
+## 📄 About the PDFs
+
+Papers are linked by DOI. No PDFs are hosted here, because most are under publisher copyright. 🔓 marks papers that are free to read legally.
+
+## Cite · License
+
+Use GitHub's **"Cite this repository"** button (see [`CITATION.cff`](CITATION.cff)). Code: MIT. Curated metadata: CC BY 4.0. Each linked paper keeps its own licence.

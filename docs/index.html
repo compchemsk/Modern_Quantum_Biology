@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.github.com; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; manifest-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>BioQubit Atlas — biological qubits & spin-based quantum biology</title>
+<meta name="description" content="A curated, self-updating library of the research on biological qubits: protein spin qubits, radical pairs, magnetoreception, LOV photochemistry and Posner molecules.">
+<meta property="og:title" content="BioQubit Atlas">
+<meta property="og:description" content="The literature on biological qubits and spin-based quantum biology, curated and kept up to date.">
+<meta property="og:image" content="https://compchemsk.github.io/Modern_Quantum_Biology/assets/og.png">
+<meta property="og:url" content="https://compchemsk.github.io/Modern_Quantum_Biology/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#080b16">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#papers">Skip to papers</a>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="BioQubit Atlas, back to top">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12.5" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".55"/><ellipse cx="16" cy="16" rx="12.5" ry="4.4" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".45"/><path d="M16 16 L23 7.5" stroke="#67e0ef" stroke-width="2.2" stroke-linecap="round"/><circle cx="23" cy="7.5" r="2.4" fill="#67e0ef"/><circle cx="16" cy="16" r="1.8" fill="currentColor"/></svg>
+      <span>BioQubit Atlas</span>
+    </a>
+    <div class="nav-links">
+      <a href="#themes">Themes</a>
+      <a href="#papers">Papers</a>
+      <a href="#library">Library</a>
+      <a href="#how">How it works</a>
+    </div>
+    <div class="nav-actions">
+      <a class="btn btn-sm btn-ghost" id="ghLink" href="#" rel="noopener" target="_blank" aria-label="Repository on GitHub">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span class="hide-sm">GitHub</span>
+      </a>
+      <a class="btn btn-sm btn-primary" href="#suggest">Suggest<span class="hide-sm">&nbsp;a paper</span></a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="pill"><span class="dot" aria-hidden="true"></span><span id="pillText">Watching the literature every morning</span></p>
+      <h1>BioQubit Atlas</h1>
+      <p class="lede">The research on biological qubits in one searchable place: protein spin qubits, radical pairs, magnetoreception, LOV photochemistry and Posner molecules. A watcher reads new papers every day; the curator decides what goes in.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#papers">Browse the papers</a>
+        <a class="btn btn-ghost" href="#suggest">Suggest a paper</a>
+      </div>
+      <dl class="stats" id="stats" aria-live="polite"></dl>
+    </div>
+
+    <figure class="sim" aria-labelledby="simCap">
+      <div class="sim-head">
+        <div>
+          <h2 class="sim-title">A radical pair, live</h2>
+          <p class="sim-sub" id="simCap">Two electron spins born as a singlet precess in a magnetic field. Drag the field and watch the singlet yield change: the effect a bird's compass is thought to use.</p>
+        </div>
+        <button class="icon-btn" id="simPause" type="button" aria-pressed="false" aria-label="Pause animation">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="5" y="4" width="3.4" height="12" rx="1" fill="currentColor"/><rect x="11.6" y="4" width="3.4" height="12" rx="1" fill="currentColor"/></svg>
+        </button>
+      </div>
+      <canvas id="simCanvas" width="640" height="270" role="img" aria-label="Two spin vectors precessing around a magnetic field; a bar shows their singlet character."></canvas>
+      <div class="sim-controls">
+        <label for="bField">Magnetic field <output id="bOut" for="bField">0.05 mT</output></label>
+        <input id="bField" type="range" min="0" max="5" step="0.01" value="0.05">
+        <div class="sim-ticks" aria-hidden="true"><span>0</span><span class="earth">Earth ≈ 0.05 mT</span><span>5 mT</span></div>
+      </div>
+      <div class="sim-read">
+        <div class="mary">
+          <canvas id="maryCanvas" width="300" height="96" role="img" aria-label="Singlet yield as a function of field strength"></canvas>
+        </div>
+        <div class="yield">
+          <span class="yield-num" id="yieldNum">—</span>
+          <span class="yield-lab">singlet yield</span>
+          <span class="yield-delta" id="yieldDelta"></span>
+        </div>
+      </div>
+      <figcaption class="sim-note">Toy semiclassical model: one nucleus coupled to one electron (1&nbsp;mT), pair lifetime 100&nbsp;ns, averaged over 676 orientations. Real proteins have dozens of nuclei, so real effects are smaller.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+  <section class="band" id="themes" aria-labelledby="themesH">
+    <div class="wrap">
+      <div class="band-head">
+        <h2 id="themesH">Explore by theme</h2>
+        <p>Six threads run through the field, from engineered protein qubits to the photochemistry they are built on.</p>
+      </div>
+      <div class="themes" id="themeGrid"></div>
+    </div>
+  </section>
+
+  <section class="band band-papers" id="papers" aria-labelledby="papersH">
+    <div class="wrap">
+      <div class="band-head">
+        <h2 id="papersH">Papers</h2>
+        <p>Search across titles, authors, journals and tags. Press <kbd>/</kbd> to jump to the search box.</p>
+      </div>
+    </div>
+    <div class="controls" id="controls">
+      <div class="wrap">
+        <div class="search-wrap">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M13 13l4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <input id="q" class="search" type="search" placeholder="Search: cryptochrome, Hore, ODMR, MagLOV…" autocomplete="off" aria-label="Search papers">
+        </div>
+        <div class="chips" id="cats" role="group" aria-label="Filter by theme"></div>
+        <div class="row">
+          <div class="chips chips-tight" id="types" role="group" aria-label="Filter by type"></div>
+          <div class="sort">
+            <label for="sort">Order</label>
+            <select id="sort">
+              <option value="section">By theme</option>
+              <option value="timeline">Timeline</option>
+              <option value="new">Newest first</option>
+              <option value="old">Oldest first</option>
+              <option value="added">Recently added</option>
+            </select>
+            <span class="count" id="count" aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap" id="list"><p class="empty">Loading the collection…</p></div>
+  </section>
+
+  <section class="band" id="library" aria-labelledby="libraryH">
+    <div class="wrap">
+      <div class="band-head">
+        <h2 id="libraryH">Library</h2>
+        <p>Background for newcomers and a toolbox for practitioners.</p>
+      </div>
+      <div id="libraryBody"></div>
+    </div>
+  </section>
+
+  <section class="band" id="how" aria-labelledby="howH">
+    <div class="wrap">
+      <div class="band-head">
+        <h2 id="howH">How the Atlas stays current</h2>
+        <p>Nothing is added automatically. A robot finds; a person decides.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Every morning</h3><p>At 06:47 IST a GitHub Action searches OpenAlex, arXiv and Europe PMC for new work on radical pairs, protein qubits, magnetoreception and related topics.</p></li>
+        <li><h3>Filtered</h3><p>Each paper is scored for relevance, checked against a list of journals and preprint servers, and compared with everything already seen.</p></li>
+        <li><h3>Proposed</h3><p>Each surviving paper becomes a GitHub issue. The curator is notified at once by email and phone.</p></li>
+        <li><h3>Decided</h3><p>Only the curator's GitHub account can approve. Approval updates this site, the README and the BibTeX file within a minute; a rejection is remembered for good.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band band-suggest" id="suggest" aria-labelledby="suggestH">
+    <div class="wrap suggest-in">
+      <div class="suggest-copy">
+        <h2 id="suggestH">Suggest a paper</h2>
+        <p>Know a paper that belongs here? Send it to the curator. Every suggestion is read, and nothing appears on the site until it has been approved.</p>
+        <ul class="ticks">
+          <li><b>By email:</b> your email app opens with the message ready to send. Nothing is sent from this page.</li>
+          <li><b>On GitHub:</b> a bot fetches the paper's details for the curator. You need a free GitHub account.</li>
+        </ul>
+      </div>
+      <form class="card form" id="suggestForm" novalidate>
+        <div class="field">
+          <label for="sDoi">DOI, arXiv id or link <span class="req">required</span></label>
+          <input id="sDoi" name="doi" required autocomplete="off" placeholder="10.1038/s41586-025-09417-w" maxlength="300">
+          <p class="hint" id="sDoiHint">Paste a DOI, an arXiv id like 2501.01234, or the paper's web address.</p>
+        </div>
+        <div class="field">
+          <label for="sTitle">Title <span class="opt">optional</span></label>
+          <input id="sTitle" name="title" autocomplete="off" maxlength="300">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="sName">Your name <span class="opt">optional</span></label>
+            <input id="sName" name="name" autocomplete="name" maxlength="120">
+          </div>
+          <div class="field">
+            <label for="sMail">Your email <span class="opt">optional</span></label>
+            <input id="sMail" name="email" type="email" autocomplete="email" maxlength="160">
+          </div>
+        </div>
+        <div class="field">
+          <label for="sWhy">Why it belongs here <span class="opt">optional</span></label>
+          <textarea id="sWhy" name="why" rows="3" maxlength="1500"></textarea>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="button" id="sendMail">Email the curator</button>
+          <button class="btn btn-ghost" type="button" id="sendGh">Open a GitHub issue</button>
+        </div>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <p class="foot-brand">BioQubit Atlas</p>
+      <p id="footCurator">Curated at IIT Kharagpur.</p>
+      <p class="foot-small" id="gen"></p>
+    </div>
+    <div class="foot-links">
+      <a id="fBib" href="#" target="_blank" rel="noopener">Full BibTeX</a>
+      <a id="fRes" href="#" target="_blank" rel="noopener">Resources on GitHub</a>
+      <a id="fCite" href="#" target="_blank" rel="noopener">How to cite</a>
+      <button type="button" class="linklike" id="openDesk">Curator desk</button>
+    </div>
+  </div>
+</footer>
+
+<dialog class="desk" id="desk" aria-labelledby="deskH">
+  <div class="desk-head">
+    <h2 id="deskH">Curator desk</h2>
+    <button class="icon-btn" type="button" id="closeDesk" aria-label="Close curator desk">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <p class="desk-lock">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="9" width="12" height="8.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M7 9V6.5a3 3 0 016 0V9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+    This page can't change anything. Approving and adding happen on GitHub, and only the curator's account is allowed to.
+  </p>
+  <h3>Waiting for your decision</h3>
+  <div id="pending" class="pending"><p class="muted">Checking GitHub…</p></div>
+  <h3>Add a paper yourself</h3>
+  <form class="desk-add" id="deskAdd" novalidate>
+    <input id="dDoi" placeholder="DOI or arXiv id" aria-label="DOI or arXiv id" autocomplete="off" maxlength="300">
+    <button class="btn btn-sm btn-primary" type="submit">Add on GitHub</button>
+  </form>
+  <p class="muted small">Opens a pre-filled issue titled “Add: …”. When you submit it from your own account, the paper goes straight in. From anyone else it waits for review.</p>
+  <h3>Shortcuts</h3>
+  <div class="desk-links" id="deskLinks"></div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><p class="noscript">This site needs JavaScript to show the collection. The full list is also in the repository's README.</p></noscript>
+</body>
+</html>

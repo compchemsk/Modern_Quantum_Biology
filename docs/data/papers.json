@@ -1,0 +1,956 @@
+{
+ "generated": "2026-11-23",
+ "categories": [
+  {
+   "key": "biological-qubits",
+   "emoji": "🧬",
+   "title": "Biological qubits & engineered spin sensors",
+   "blurb": "Genetically encoded proteins operated as spin qubits or quantum sensors — fluorescent-protein qubits, MagLOV-type magnetic reporters, in-vivo spin control."
+  },
+  {
+   "key": "radical-pair",
+   "emoji": "🧭",
+   "title": "Radical-pair mechanism & magnetoreception",
+   "blurb": "Spin-correlated radical pairs in cryptochromes and designed flavoproteins; the physics behind the avian compass."
+  },
+  {
+   "key": "methods",
+   "emoji": "🔬",
+   "title": "Methods & instrumentation",
+   "blurb": "New ways to detect and image magnetic-field and spin effects in biological samples."
+  },
+  {
+   "key": "flavin-spin",
+   "emoji": "🌀",
+   "title": "Flavin spin dynamics & photo-CIDNP",
+   "blurb": "Nuclear hyperpolarisation, triplet and radical chemistry of flavin cofactors."
+  },
+  {
+   "key": "lov",
+   "emoji": "💡",
+   "title": "LOV domains — photochemistry, structure & optogenetics",
+   "blurb": "The AsLOV2 photocycle from femtoseconds to protein dimerisation; the platform behind MagLOV."
+  },
+  {
+   "key": "posner",
+   "emoji": "🦴",
+   "title": "Posner molecules & nuclear-spin quantum cognition",
+   "blurb": "Long-lived ³¹P nuclear-spin entanglement in calcium phosphate clusters and its critics."
+  },
+  {
+   "key": "theory",
+   "emoji": "📐",
+   "title": "Theory, open quantum systems & simulation",
+   "blurb": "Decoherence, master equations and spin-dynamics methods aimed at biological spin systems."
+  },
+  {
+   "key": "reviews",
+   "emoji": "📚",
+   "title": "Reviews & perspectives",
+   "blurb": "Field-level overviews of quantum biology and biological quantum technologies."
+  }
+ ],
+ "papers": [
+  {
+   "id": "aghaei2026quantum",
+   "title": "A quantum interface with mitochondrial bioenergetics",
+   "authors": [
+    "Parisa Aghaei",
+    "Sangjun Noh",
+    "Javier Noé Ramos-Silva",
+    "Minghao Jiang",
+    "Phang-Lang Chen",
+    "Yumay Chen",
+    "Fatemeh Goodarzinia",
+    "Robert Usselman",
+    "Philip Hemmer",
+    "Douglas C. Wallace",
+    "Peter J. Burke"
+   ],
+   "year": 2026,
+   "journal": "bioRxiv",
+   "doi": "10.64898/2026.07.03.736226",
+   "type": "preprint",
+   "category": "biological-qubits",
+   "tags": [
+    "mitochondria",
+    "bioenergetics",
+    "quantum interface"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.64898/2026.07.03.736226",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "abrahams2026quantum",
+   "title": "Quantum spin resonance in engineered proteins for multimodal sensing",
+   "authors": [
+    "Gabriel Abrahams",
+    "Ana Štuhec",
+    "Vincent Spreng",
+    "Robin Henry",
+    "Idris Kempf",
+    "Jessica James",
+    "Kirill Sechkar",
+    "Scott Stacey",
+    "Vicente Trelles-Fernandez",
+    "Lewis M. Antill",
+    "Christiane R. Timmel",
+    "Jack J. Miller",
+    "Maria Ingaramo",
+    "Andrew G. York",
+    "Jean-Philippe Tetienne",
+    "Harrison Steel"
+   ],
+   "year": 2026,
+   "journal": "Nature",
+   "doi": "10.1038/s41586-025-09971-3",
+   "type": "article",
+   "category": "biological-qubits",
+   "tags": [
+    "MagLOV",
+    "radical pair",
+    "ODMR",
+    "magnetic field effect",
+    "flavoprotein"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.1038/s41586-025-09971-3",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "salvia2026quantum",
+   "title": "Quantum transduction from electron spin state to a signaling state in a wild-type LOV photoreceptor",
+   "authors": [
+    "William Salvia",
+    "Joshua Straub",
+    "Shiny Maity",
+    "Alexey Bogdanov",
+    "Subhajyoti Chaudhuri",
+    "Eric Han",
+    "Songi Han"
+   ],
+   "year": 2026,
+   "journal": "bioRxiv",
+   "doi": "10.64898/2026.06.30.735402",
+   "type": "preprint",
+   "category": "lov",
+   "tags": [
+    "AsLOV2",
+    "radical pair",
+    "magnetic field effect",
+    "photoadduct",
+    "quantum transduction"
+   ],
+   "oa": true,
+   "note": "Links LOV signalling directly to spin dynamics; bridges this section and the radical-pair sections.",
+   "link": "https://doi.org/10.64898/2026.06.30.735402",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ross2026maglov2",
+   "title": "The magnetic field-dependent fluorescence of MagLOV2 in live bacterial cells is consistent with the radical pair mechanism",
+   "authors": [
+    "Brian L. Ross",
+    "Alessandro Lodesani",
+    "Clarice D. Aiello"
+   ],
+   "year": 2026,
+   "journal": "bioRxiv",
+   "doi": "10.64898/2026.02.18.706690",
+   "type": "preprint",
+   "category": "biological-qubits",
+   "tags": [
+    "MagLOV2",
+    "radical pair",
+    "magnetic field effect",
+    "E. coli",
+    "low-field effect"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.64898/2026.02.18.706690",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "feder2025fluorescent",
+   "title": "A fluorescent-protein spin qubit",
+   "authors": [
+    "Jacob S. Feder",
+    "Benjamin S. Soloway",
+    "Shreya Verma",
+    "Zhi Z. Geng",
+    "Shihao Wang",
+    "Bethel B. Kifle",
+    "Emmeline G. Riendeau",
+    "Yeghishe Tsaturyan",
+    "Leah R. Weiss",
+    "Mouzhe Xie",
+    "Jun Huang",
+    "Aaron Esser-Kahn",
+    "Laura Gagliardi",
+    "David D. Awschalom",
+    "Peter C. Maurer"
+   ],
+   "year": 2025,
+   "journal": "Nature",
+   "doi": "10.1038/s41586-025-09417-w",
+   "type": "article",
+   "category": "biological-qubits",
+   "tags": [
+    "EYFP",
+    "triplet qubit",
+    "ODMR",
+    "genetically encoded",
+    "quantum sensing"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.1038/s41586-025-09417-w",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "antill2025introduction",
+   "title": "Introduction of magneto-fluorescence fluctuation microspectroscopy for investigating quantum effects in biology",
+   "authors": [
+    "Lewis M. Antill",
+    "Mizuki Kohmura",
+    "Chiho Jimbo",
+    "Kiminori Maeda"
+   ],
+   "year": 2025,
+   "journal": "Nature Photonics",
+   "doi": "10.1038/s41566-024-01593-x",
+   "type": "article",
+   "category": "methods",
+   "tags": [
+    "fluorescence fluctuation",
+    "microspectroscopy",
+    "magnetic field effect",
+    "single-molecule"
+   ],
+   "link": "https://doi.org/10.1038/s41566-024-01593-x",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "burd2025magnetic",
+   "title": "Magnetic resonance control of reaction yields through genetically-encoded protein:flavin spin-correlated radicals in a live animal",
+   "authors": [
+    "Shaun C. Burd",
+    "Nahal Bagheri",
+    "Maria Ingaramo",
+    "Alec F. Condon",
+    "Samsuzzoha Mondal",
+    "Dara P. Dowlatshahi",
+    "Jacob A. Summers",
+    "Srijit Mukherjee",
+    "Andrew G. York",
+    "Soichi Wakatsuki",
+    "Steven G. Boxer",
+    "Mark Kasevich"
+   ],
+   "year": 2025,
+   "journal": "bioRxiv",
+   "doi": "10.1101/2025.02.27.640669",
+   "type": "preprint",
+   "category": "biological-qubits",
+   "tags": [
+    "spin-correlated radical pair",
+    "in vivo",
+    "C. elegans",
+    "RF control",
+    "flavin"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.1101/2025.02.27.640669",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "xiang2025mechanism",
+   "title": "Mechanism of Giant Magnetic Field Effect in a Red Fluorescent Protein",
+   "authors": [
+    "Katherine M. Xiang",
+    "Hana Lampson",
+    "Rebecca Frank Hayward",
+    "Andrew G. York",
+    "Maria Ingaramo",
+    "Adam E. Cohen"
+   ],
+   "year": 2025,
+   "journal": "Journal of the American Chemical Society",
+   "doi": "10.1021/jacs.5c03997",
+   "type": "article",
+   "category": "biological-qubits",
+   "tags": [
+    "mScarlet3",
+    "magnetic field effect",
+    "flavin",
+    "radical pair",
+    "E. coli"
+   ],
+   "link": "https://doi.org/10.1021/jacs.5c03997",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "felcikova2024design",
+   "title": "Design of AsLOV2 domain as a carrier of light-induced dissociable FMN photosensitizer",
+   "authors": [
+    "Kristína Felčíková",
+    "Andrej Hovan",
+    "Marek Polák",
+    "Dmitry S. Loginov",
+    "Veronika Holotová",
+    "Carlos Díaz",
+    "Tibor Kožár",
+    "One-Sun Lee",
+    "Rastislav Varhač",
+    "Petr Novák",
+    "Gregor Bánó",
+    "Erik Sedlák"
+   ],
+   "year": 2024,
+   "journal": "Protein Science",
+   "volume": "33",
+   "pages": "e4921",
+   "doi": "10.1002/pro.4921",
+   "type": "article",
+   "category": "lov",
+   "tags": [
+    "AsLOV2",
+    "photosensitizer",
+    "singlet oxygen",
+    "FMN release"
+   ],
+   "link": "https://doi.org/10.1002/pro.4921",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "panter2024insights",
+   "title": "Insights into the photoswitch based on 5-deazaFMN and LOV2 from Avena sativa: a combined absorption and NMR spectroscopy study",
+   "authors": [
+    "Sabrina Panter",
+    "Jakob Wörner",
+    "Jing Chen",
+    "Boris Illarionov",
+    "Adelbert Bacher",
+    "Markus Fischer",
+    "Stefan Weber"
+   ],
+   "year": 2024,
+   "journal": "Physical Chemistry Chemical Physics",
+   "volume": "26",
+   "pages": "28884–28893",
+   "doi": "10.1039/d4cp02714k",
+   "type": "article",
+   "category": "lov",
+   "tags": [
+    "5-deazaFMN",
+    "AsLOV2",
+    "photoswitch",
+    "NMR"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.1039/d4cp02714k",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "denton2024magnetosensitivity",
+   "title": "Magnetosensitivity of tightly bound radical pairs in cryptochrome is enabled by the quantum Zeno effect",
+   "authors": [
+    "Matt C. J. Denton",
+    "Luke D. Smith",
+    "Wenhao Xu",
+    "Jodeci Pugsley",
+    "Amelia Toghill",
+    "Daniel R. Kattnig"
+   ],
+   "year": 2024,
+   "journal": "Nature Communications",
+   "doi": "10.1038/s41467-024-55124-x",
+   "type": "article",
+   "category": "radical-pair",
+   "tags": [
+    "quantum Zeno effect",
+    "cryptochrome",
+    "exchange coupling",
+    "theory"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.1038/s41467-024-55124-x",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "kim2024structural",
+   "title": "Structural dynamics of protein-protein association involved in the light-induced transition of Avena sativa LOV2 protein",
+   "authors": [
+    "Changin Kim",
+    "So Ri Yun",
+    "Sang Jin Lee",
+    "Seong Ok Kim",
+    "Hyosub Lee",
+    "Jungkweon Choi",
+    "Jong Goo Kim",
+    "Tae Wu Kim",
+    "Seyoung You",
+    "Irina Kosheleva",
+    "Taeyoon Noh",
+    "Jonghoon Baek",
+    "Hyotcherl Ihee"
+   ],
+   "year": 2024,
+   "journal": "Nature Communications",
+   "doi": "10.1038/s41467-024-51461-z",
+   "type": "article",
+   "category": "lov",
+   "tags": [
+    "AsLOV2",
+    "time-resolved X-ray liquidography",
+    "dimerization",
+    "Jα helix"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.1038/s41467-024-51461-z",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "matysik2023spin",
+   "title": "Spin Dynamics of Flavoproteins",
+   "authors": [
+    "Jörg Matysik",
+    "Luca Gerhards",
+    "Tobias Theiss",
+    "Lisa Timmermann",
+    "Patrick Kurle-Tucholski",
+    "Guzel Musabirova",
+    "Ruonan Qin",
+    "Frank Ortmann",
+    "Ilia A. Solov'yov",
+    "Tanja Gulder"
+   ],
+   "year": 2023,
+   "journal": "International Journal of Molecular Sciences",
+   "volume": "24",
+   "pages": "8218",
+   "doi": "10.3390/ijms24098218",
+   "type": "review",
+   "category": "flavin-spin",
+   "tags": [
+    "photo-CIDNP",
+    "flavin",
+    "spin-correlated radical pair",
+    "magnetoreception"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.3390/ijms24098218",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "agarwal2023biological",
+   "title": "The Biological Qubit: Calcium Phosphate Dimers, Not Trimers",
+   "authors": [
+    "Shivang Agarwal",
+    "Daniel R. Kattnig",
+    "Clarice D. Aiello",
+    "Amartya S. Banerjee"
+   ],
+   "year": 2023,
+   "journal": "The Journal of Physical Chemistry Letters",
+   "volume": "14",
+   "pages": "2518–2525",
+   "doi": "10.1021/acs.jpclett.2c03945",
+   "type": "letter",
+   "category": "posner",
+   "tags": [
+    "calcium phosphate dimer",
+    "Posner molecule",
+    "nuclear spin coherence",
+    "ab initio"
+   ],
+   "link": "https://doi.org/10.1021/acs.jpclett.2c03945",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "tan2022optophysiology",
+   "title": "Optophysiology: Illuminating cell physiology with optogenetics",
+   "authors": [
+    "Peng Tan",
+    "Lian He",
+    "Yun Huang",
+    "Yubin Zhou"
+   ],
+   "year": 2022,
+   "journal": "Physiological Reviews",
+   "volume": "102",
+   "pages": "1263–1325",
+   "doi": "10.1152/physrev.00021.2021",
+   "type": "review",
+   "category": "lov",
+   "tags": [
+    "optogenetics",
+    "review",
+    "LOV tools"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.1152/physrev.00021.2021",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "xu2021magnetic",
+   "title": "Magnetic sensitivity of cryptochrome 4 from a migratory songbird",
+   "authors": [
+    "Jingjing Xu",
+    "Lauren E. Jarocha",
+    "Tilo Zollitsch",
+    "Marcin Konowalczyk",
+    "Kevin B. Henbest",
+    "et al."
+   ],
+   "year": 2021,
+   "journal": "Nature",
+   "doi": "10.1038/s41586-021-03618-9",
+   "type": "article",
+   "category": "radical-pair",
+   "tags": [
+    "cryptochrome 4",
+    "European robin",
+    "magnetoreception",
+    "FAD",
+    "tryptophan tetrad"
+   ],
+   "link": "https://doi.org/10.1038/s41586-021-03618-9",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dejean2020detection",
+   "title": "Detection of magnetic field effects by confocal microscopy",
+   "authors": [
+    "Victoire Déjean",
+    "Marcin Konowalczyk",
+    "Jamie Gravell",
+    "Matthew J. Golesworthy",
+    "Catlin Gunn",
+    "Nils Pompe",
+    "Olivia Foster Vander Elst",
+    "Ke-Jie Tan",
+    "Mark Oxborrow",
+    "Dirk G. A. L. Aarts",
+    "Stuart R. Mackenzie",
+    "Christiane R. Timmel"
+   ],
+   "year": 2020,
+   "journal": "Chemical Science",
+   "volume": "11",
+   "pages": "7772–7781",
+   "doi": "10.1039/d0sc01986k",
+   "type": "article",
+   "category": "methods",
+   "tags": [
+    "confocal microscopy",
+    "magnetic field effect",
+    "flavin",
+    "imaging"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.1039/d0sc01986k",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "halpern2019quantum",
+   "title": "Quantum information in the Posner model of quantum cognition",
+   "authors": [
+    "Nicole Yunger Halpern",
+    "Elizabeth Crosson"
+   ],
+   "year": 2019,
+   "journal": "Annals of Physics",
+   "volume": "407",
+   "pages": "92–147",
+   "doi": "10.1016/j.aop.2018.11.016",
+   "type": "article",
+   "category": "posner",
+   "tags": [
+    "Posner molecule",
+    "quantum information",
+    "entanglement",
+    "theory"
+   ],
+   "link": "https://doi.org/10.1016/j.aop.2018.11.016",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "bialas2019ultrafast",
+   "title": "Ultrafast flavin/tryptophan radical pair kinetics in a magnetically sensitive artificial protein",
+   "authors": [
+    "Chris Bialas",
+    "David T. Barnard",
+    "Dirk B. Auman",
+    "Rylee A. McBride",
+    "Lauren E. Jarocha",
+    "P. J. Hore",
+    "P. Leslie Dutton",
+    "Robert J. Stanley",
+    "Christopher C. Moser"
+   ],
+   "year": 2019,
+   "journal": "Physical Chemistry Chemical Physics",
+   "volume": "21",
+   "pages": "13453–13461",
+   "doi": "10.1039/c9cp01916b",
+   "type": "article",
+   "category": "radical-pair",
+   "tags": [
+    "ultrafast spectroscopy",
+    "electron transfer",
+    "flavin",
+    "tryptophan",
+    "maquette"
+   ],
+   "link": "https://doi.org/10.1039/c9cp01916b",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "zollitsch2018magnetically",
+   "title": "Magnetically Sensitive Radical Photochemistry of Non-natural Flavoproteins",
+   "authors": [
+    "Tilo M. Zollitsch",
+    "Lauren E. Jarocha",
+    "Chris Bialas",
+    "Kevin B. Henbest",
+    "Goutham Kodali",
+    "P. Leslie Dutton",
+    "Christopher C. Moser",
+    "Christiane R. Timmel",
+    "P. J. Hore",
+    "Stuart R. Mackenzie"
+   ],
+   "year": 2018,
+   "journal": "Journal of the American Chemical Society",
+   "volume": "140",
+   "pages": "8705–8713",
+   "doi": "10.1021/jacs.8b03104",
+   "type": "article",
+   "category": "radical-pair",
+   "tags": [
+    "maquette",
+    "flavin",
+    "transient absorption",
+    "magnetic field effect"
+   ],
+   "link": "https://doi.org/10.1021/jacs.8b03104",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "bialas2016engineering",
+   "title": "Engineering an Artificial Flavoprotein Magnetosensor",
+   "authors": [
+    "Chris Bialas",
+    "Lauren E. Jarocha",
+    "Kevin B. Henbest",
+    "Tilo M. Zollitsch",
+    "Goutham Kodali",
+    "Christiane R. Timmel",
+    "Stuart R. Mackenzie",
+    "P. Leslie Dutton",
+    "Christopher C. Moser",
+    "P. J. Hore"
+   ],
+   "year": 2016,
+   "journal": "Journal of the American Chemical Society",
+   "doi": "10.1021/jacs.6b09682",
+   "type": "letter",
+   "category": "radical-pair",
+   "tags": [
+    "maquette",
+    "artificial protein",
+    "flavin",
+    "tryptophan",
+    "magnetic field effect"
+   ],
+   "link": "https://doi.org/10.1021/jacs.6b09682",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "zhu2016photoadduct",
+   "title": "Photoadduct Formation from the FMN Singlet Excited State in the LOV2 Domain of Chlamydomonas reinhardtii Phototropin",
+   "authors": [
+    "Jingyi Zhu",
+    "Tilo Mathes",
+    "Yusaku Hontani",
+    "Maxime T. A. Alexandre",
+    "K. C. Toh",
+    "Peter Hegemann",
+    "John T. M. Kennis"
+   ],
+   "year": 2016,
+   "journal": "The Journal of Physical Chemistry Letters",
+   "doi": "10.1021/acs.jpclett.6b02075",
+   "type": "letter",
+   "category": "lov",
+   "tags": [
+    "CrLOV2",
+    "AsLOV2",
+    "singlet pathway",
+    "ultrafast spectroscopy",
+    "KIE"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.1021/acs.jpclett.6b02075",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "kothe2015detecting",
+   "title": "Detecting a New Source for Photochemically Induced Dynamic Nuclear Polarization in the LOV2 Domain of Phototropin by Magnetic-Field Dependent 13C NMR Spectroscopy",
+   "authors": [
+    "Gerd Kothe",
+    "Michail Lukaschek",
+    "Gerhard Link",
+    "Sylwia Kacprzak",
+    "Boris Illarionov",
+    "Markus Fischer",
+    "Wolfgang Eisenreich",
+    "Adelbert Bacher",
+    "Stefan Weber"
+   ],
+   "year": 2015,
+   "journal": "The Journal of Physical Chemistry B",
+   "doi": "10.1021/jp507134y",
+   "type": "article",
+   "category": "flavin-spin",
+   "tags": [
+    "photo-CIDNP",
+    "field-cycling NMR",
+    "LOV2",
+    "triplet"
+   ],
+   "link": "https://doi.org/10.1021/jp507134y",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "pudasaini2015lov",
+   "title": "LOV-based optogenetic devices: light-driven modules to impart photoregulated control of cellular signaling",
+   "authors": [
+    "Ashutosh Pudasaini",
+    "Kaley K. El-Arab",
+    "Brian D. Zoltowski"
+   ],
+   "year": 2015,
+   "journal": "Frontiers in Molecular Biosciences",
+   "volume": "2",
+   "pages": "18",
+   "doi": "10.3389/fmolb.2015.00018",
+   "type": "review",
+   "category": "lov",
+   "tags": [
+    "optogenetics",
+    "LOV engineering",
+    "photocycle tuning"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.3389/fmolb.2015.00018",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "fisher2015quantum",
+   "title": "Quantum cognition: The possibility of processing with nuclear spins in the brain",
+   "authors": [
+    "Matthew P. A. Fisher"
+   ],
+   "year": 2015,
+   "journal": "Annals of Physics",
+   "volume": "362",
+   "pages": "593–602",
+   "doi": "10.1016/j.aop.2015.08.020",
+   "type": "article",
+   "category": "posner",
+   "tags": [
+    "Posner molecule",
+    "phosphorus-31",
+    "nuclear spin",
+    "entanglement",
+    "foundational"
+   ],
+   "link": "https://doi.org/10.1016/j.aop.2015.08.020",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "zayner2013factors",
+   "title": "Factors That Control the Chemistry of the LOV Domain Photocycle",
+   "authors": [
+    "Josiah P. Zayner",
+    "Tobin R. Sosnick"
+   ],
+   "year": 2013,
+   "journal": "PLOS ONE",
+   "doi": "10.1371/journal.pone.0087074",
+   "type": "article",
+   "category": "lov",
+   "tags": [
+    "AsLOV2",
+    "mutational analysis",
+    "photocycle",
+    "N5 reduction"
+   ],
+   "oa": true,
+   "link": "https://doi.org/10.1371/journal.pone.0087074",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "zayner2012amino",
+   "title": "The Amino-Terminal Helix Modulates Light-Activated Conformational Changes in AsLOV2",
+   "authors": [
+    "Josiah P. Zayner",
+    "Chloe Antoniou",
+    "Tobin R. Sosnick"
+   ],
+   "year": 2012,
+   "journal": "Journal of Molecular Biology",
+   "volume": "419",
+   "pages": "61–74",
+   "doi": "10.1016/j.jmb.2012.02.037",
+   "type": "article",
+   "category": "lov",
+   "tags": [
+    "AsLOV2",
+    "A'α helix",
+    "Jα helix",
+    "NMR",
+    "allostery"
+   ],
+   "link": "https://doi.org/10.1016/j.jmb.2012.02.037",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "vanstokkum2011primary",
+   "title": "The Primary Photophysics of the Avena sativa Phototropin 1 LOV2 Domain Observed with Time-resolved Emission Spectroscopy",
+   "authors": [
+    "Ivo H. M. van Stokkum",
+    "Magdalena Gauden",
+    "Sean Crosson",
+    "Rienk van Grondelle",
+    "Keith Moffat",
+    "John T. M. Kennis"
+   ],
+   "year": 2011,
+   "journal": "Photochemistry and Photobiology",
+   "volume": "87",
+   "pages": "534–541",
+   "doi": "10.1111/j.1751-1097.2011.00903.x",
+   "type": "article",
+   "category": "lov",
+   "tags": [
+    "AsLOV2",
+    "time-resolved emission",
+    "global analysis"
+   ],
+   "link": "https://doi.org/10.1111/j.1751-1097.2011.00903.x",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "alexandre2009primary",
+   "title": "Primary Reactions of the LOV2 Domain of Phototropin Studied with Ultrafast Mid-Infrared Spectroscopy and Quantum Chemistry",
+   "authors": [
+    "Maxime T. A. Alexandre",
+    "Tatiana Domratcheva",
+    "Cosimo Bonetti",
+    "Luuk J. G. W. van Wilderen",
+    "Rienk van Grondelle",
+    "Marie-Louise Groot",
+    "Klaas J. Hellingwerf",
+    "John T. M. Kennis"
+   ],
+   "year": 2009,
+   "journal": "Biophysical Journal",
+   "volume": "97",
+   "pages": "227–237",
+   "doi": "10.1016/j.bpj.2009.01.066",
+   "type": "article",
+   "category": "lov",
+   "tags": [
+    "AsLOV2",
+    "ultrafast IR",
+    "CIS",
+    "triplet",
+    "quantum chemistry"
+   ],
+   "link": "https://doi.org/10.1016/j.bpj.2009.01.066",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "richter2005photochemically",
+   "title": "Photochemically Induced Dynamic Nuclear Polarization in a C450A Mutant of the LOV2 Domain of the Avena sativa Blue-Light Receptor Phototropin",
+   "authors": [
+    "Gerald Richter",
+    "Stefan Weber",
+    "Werner Römisch",
+    "Adelbert Bacher",
+    "Markus Fischer",
+    "Wolfgang Eisenreich"
+   ],
+   "year": 2005,
+   "journal": "Journal of the American Chemical Society",
+   "doi": "10.1021/ja053785n",
+   "type": "article",
+   "category": "flavin-spin",
+   "tags": [
+    "photo-CIDNP",
+    "AsLOV2 C450A",
+    "FMN radical",
+    "NMR"
+   ],
+   "link": "https://doi.org/10.1021/ja053785n",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "schuttrigkeit2003primary",
+   "title": "Primary photophysics of the FMN binding LOV2 domain of the plant blue light receptor phototropin of Avena sativa",
+   "authors": [
+    "Tanja A. Schüttrigkeit",
+    "Christian K. Kompa",
+    "Michael Salomon",
+    "Wolfhart Rüdiger",
+    "Maria E. Michel-Beyerle"
+   ],
+   "year": 2003,
+   "journal": "Chemical Physics",
+   "volume": "294",
+   "pages": "501–508",
+   "doi": "10.1016/S0301-0104(03)00390-2",
+   "type": "article",
+   "category": "lov",
+   "tags": [
+    "AsLOV2",
+    "intersystem crossing",
+    "triplet",
+    "time-resolved fluorescence"
+   ],
+   "link": "https://doi.org/10.1016/S0301-0104(03)00390-2",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "salomon2000photochemical",
+   "title": "Photochemical and Mutational Analysis of the FMN-Binding Domains of the Plant Blue Light Receptor, Phototropin",
+   "authors": [
+    "Michael Salomon",
+    "John M. Christie",
+    "Elke Knieb",
+    "Ulrika Lempert",
+    "Winslow R. Briggs"
+   ],
+   "year": 2000,
+   "journal": "Biochemistry",
+   "volume": "39",
+   "pages": "9401–9410",
+   "doi": "10.1021/bi000585+",
+   "type": "article",
+   "category": "lov",
+   "tags": [
+    "phototropin",
+    "LOV1",
+    "LOV2",
+    "photocycle",
+    "Cys39",
+    "foundational"
+   ],
+   "link": "https://doi.org/10.1021/bi000585+",
+   "added": "2026-11-23"
+  }
+ ]
+}

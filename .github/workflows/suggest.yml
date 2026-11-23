@@ -1,0 +1,50 @@
+name: Prepare suggested paper
+
+# A "Suggest a paper" issue was opened. The bot fetches the metadata and posts a
+# ready entry. If the curator opened it with a title starting "Add:", the paper
+# is added immediately (checked in scripts/curate.py against config/watch.yaml).
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: atlas-write
+  cancel-in-progress: false
+
+jobs:
+  suggest:
+    if: contains(github.event.issue.labels.*.name, 'suggestion')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --disable-pip-version-check pyyaml==6.0.2
+
+      - name: Fetch metadata (and add it, if the curator asked)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python scripts/curate.py suggest
+
+      - name: Commit
+        run: |
+          git config user.name  "bioqubit-atlas-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data README.md CITATION.cff RESOURCES.md bibliography docs .github/ISSUE_TEMPLATE
+          if ! git diff --cached --quiet; then
+            git commit -F <(python -c 'import json;print(json.load(open("out/result.json")).get("commit","add paper"))')
+            git pull --rebase --quiet
+            git push
+          fi
+
+      - name: Reply on the issue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/curate.py finalize

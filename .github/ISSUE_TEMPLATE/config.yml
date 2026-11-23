@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🌐 Browse the BioQubit Atlas
+    url: https://compchemsk.github.io/Modern_Quantum_Biology/
+    about: Search and filter every paper in the collection.
+  - name: ✉️ Suggest a paper by email instead
+    url: https://compchemsk.github.io/Modern_Quantum_Biology/#suggest
+    about: The website's form prepares an email to the curator.

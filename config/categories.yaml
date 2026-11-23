@@ -1,0 +1,42 @@
+# Sections of the Atlas, in display order.
+# key: used in papers.yaml `category`
+# title / emoji / blurb: shown in README and on the website
+- key: biological-qubits
+  emoji: "🧬"
+  title: Biological qubits & engineered spin sensors
+  blurb: Genetically encoded proteins operated as spin qubits or quantum sensors — fluorescent-protein qubits, MagLOV-type magnetic reporters, in-vivo spin control.
+
+- key: radical-pair
+  emoji: "🧭"
+  title: Radical-pair mechanism & magnetoreception
+  blurb: Spin-correlated radical pairs in cryptochromes and designed flavoproteins; the physics behind the avian compass.
+
+- key: methods
+  emoji: "🔬"
+  title: Methods & instrumentation
+  blurb: New ways to detect and image magnetic-field and spin effects in biological samples.
+
+- key: flavin-spin
+  emoji: "🌀"
+  title: Flavin spin dynamics & photo-CIDNP
+  blurb: Nuclear hyperpolarisation, triplet and radical chemistry of flavin cofactors.
+
+- key: lov
+  emoji: "💡"
+  title: LOV domains — photochemistry, structure & optogenetics
+  blurb: The AsLOV2 photocycle from femtoseconds to protein dimerisation; the platform behind MagLOV.
+
+- key: posner
+  emoji: "🦴"
+  title: Posner molecules & nuclear-spin quantum cognition
+  blurb: Long-lived ³¹P nuclear-spin entanglement in calcium phosphate clusters and its critics.
+
+- key: theory
+  emoji: "📐"
+  title: Theory, open quantum systems & simulation
+  blurb: Decoherence, master equations and spin-dynamics methods aimed at biological spin systems.
+
+- key: reviews
+  emoji: "📚"
+  title: Reviews & perspectives
+  blurb: Field-level overviews of quantum biology and biological quantum technologies.

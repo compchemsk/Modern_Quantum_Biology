@@ -1,0 +1,34 @@
+{
+ "resultList": {
+  "result": [
+   {
+    "source": "PPR",
+    "id": "PPR1",
+    "doi": "10.9999/test.preprint.8",
+    "title": "TEST MagLOV variants report <i>in vivo</i> spin resonance in zebrafish",
+    "authorString": "Fish F, Lov M.",
+    "pubYear": "2026",
+    "firstPublicationDate": "2026-11-14",
+    "bookOrReportDetails": {
+     "publisher": "bioRxiv"
+    },
+    "abstractText": "Engineered MagLOV fluorescent protein reports optically detected magnetic resonance in living zebrafish."
+   },
+   {
+    "source": "MED",
+    "id": "999",
+    "doi": "10.9999/TEST.RELEVANT.1",
+    "title": "TEST Coherent radical-pair spin dynamics in a cryptochrome mutant probed by pulsed magnetic resonance.",
+    "authorString": "Tester A, Example B.",
+    "pubYear": "2026",
+    "firstPublicationDate": "2026-11-11",
+    "journalInfo": {
+     "journal": {
+      "title": "Nature Communications"
+     }
+    },
+    "abstractText": "Duplicate of OpenAlex record 1, should merge."
+   }
+  ]
+ }
+}

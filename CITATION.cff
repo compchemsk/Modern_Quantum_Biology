@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use the BioQubit Atlas, please cite it as below."
+title: "BioQubit Atlas: a curated, self-updating bibliography of biological qubits and spin-based quantum biology"
+type: dataset
+authors:
+  - family-names: Karmakar
+    given-names: Soumyajit
+    affiliation: "Department of Chemistry, IIT Kharagpur"
+repository-code: "https://github.com/compchemsk/Modern_Quantum_Biology"
+url: "https://compchemsk.github.io/Modern_Quantum_Biology/"
+license: CC-BY-4.0
+date-released: 2026-11-23
+keywords: [quantum biology, biological qubits, radical pair mechanism, magnetoreception, spin chemistry, LOV domain, Posner molecule]

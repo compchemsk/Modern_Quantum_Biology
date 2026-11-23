@@ -1,0 +1,18 @@
+{
+ "title": "BioQubit Atlas",
+ "tagline": "The literature on biological qubits and spin-based quantum biology, curated by hand and kept up to date by a daily watcher.",
+ "owner": "compchemsk",
+ "repo": "Modern_Quantum_Biology",
+ "repo_url": "https://github.com/compchemsk/Modern_Quantum_Biology",
+ "pages_url": "https://compchemsk.github.io/Modern_Quantum_Biology/",
+ "curator": {
+  "name": "Soumyajit Karmakar",
+  "affiliation": "Department of Chemistry, IIT Kharagpur",
+  "website": "https://sites.google.com/view/compchemsk/",
+  "scholar": "https://scholar.google.com/citations?user=7H-o4dgAAAAJ",
+  "c": [
+   "moc.liamg",
+   "tii.rakamraktijaymuos"
+  ]
+ }
+}

@@ -1,0 +1,2 @@
+# Candidates the curator rejected (written by /reject). Never proposed again.
+# Delete a line to let the watcher propose that paper once more.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:arxiv="http://arxiv.org/schemas/atom">
+<entry><id>http://arxiv.org/abs/2611.01234v2</id><published>2026-11-12T10:00:00Z</published>
+<title>TEST Quantum Zeno protection of
+  radical pairs in magnetoreception</title>
+<summary>We model radical pair recombination in cryptochrome and show quantum Zeno protection of spin coherence.</summary>
+<author><name>Zed Zeno</name></author><author><name>Quinn Bird</name></author></entry>
+<entry><id>http://arxiv.org/abs/1901.00001v1</id><published>2019-01-01T00:00:00Z</published>
+<title>TEST Old radical pair paper</title><summary>radical pair cryptochrome</summary>
+<author><name>Old Timer</name></author></entry>
+</feed>

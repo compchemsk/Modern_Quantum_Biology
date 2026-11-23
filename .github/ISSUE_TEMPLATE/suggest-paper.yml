@@ -1,0 +1,23 @@
+name: 📄 Suggest a paper
+description: Propose a paper for the BioQubit Atlas. Just paste its DOI or arXiv id.
+title: "Suggestion: "
+labels: [suggestion]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paste a DOI (e.g. `10.1038/s41586-025-09417-w`) or an arXiv id (e.g. `2501.01234`).
+        A bot fetches the details and prepares the entry; the curator then decides.
+        Prefer email? Use the form on the website instead.
+  - type: input
+    id: identifier
+    attributes:
+      label: DOI or arXiv id
+      placeholder: 10.1038/s41586-025-09417-w
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it belong here? (optional)
+      description: One or two sentences help the curator.

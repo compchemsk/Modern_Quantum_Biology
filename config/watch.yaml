@@ -1,0 +1,263 @@
+# ---------------------------------------------------------------------------
+#  Literature watcher configuration  (read by scripts/watch.py)
+#  Tune this file freely; no code changes needed.
+# ---------------------------------------------------------------------------
+
+# GitHub usernames allowed to /approve or /reject. The repository owner is
+# always a curator; add co-curators (e.g. your students) here.
+curators: [compchemsk]
+
+# Put a collapsed abstract in each candidate issue? Issues in a public repo are
+# public, and abstracts are publisher text — so this is off by default.
+include_abstract: false
+
+# Contact address sent to OpenAlex/Crossref "polite pool" (faster, more reliable).
+contact_email: soumyajitkarmakar.iit@gmail.com
+
+# How many days back each run looks. Runs are daily, but indexing lags by days,
+# so a 21-day window with de-duplication guarantees nothing slips through.
+lookback_days: 21
+
+# Hard cap on new issues opened per run (protects you from a flood if a
+# keyword turns out to be too broad).
+max_issues_per_run: 15
+
+# Minimum relevance score for a candidate to reach you (see `keywords`).
+min_score: 6
+# Stricter bar for papers with no `core` phrase (only bio + spin words) — keeps
+# out routine EPR/NMR structural biology while letting "protein qubit" papers in.
+min_score_without_core: 14
+
+# --------------------------- where to look --------------------------------
+sources:
+  openalex: true      # all journals + bioRxiv/ChemRxiv/arXiv, with abstracts
+  arxiv: true         # quant-ph, physics.bio-ph, physics.chem-ph, q-bio — same-day
+  europepmc: true     # PubMed + bioRxiv/medRxiv — fast for life-science venues
+
+arxiv_categories: [quant-ph, physics.bio-ph, physics.chem-ph, q-bio.BM, q-bio.SC, cond-mat.soft]
+
+# Search phrases sent to every source (title + abstract). Keep them specific;
+# the scorer below does the fine filtering.
+queries:
+  - "radical pair"
+  - "spin-correlated radical pair"
+  - "biological qubit"
+  - "protein qubit"
+  - "fluorescent protein qubit"
+  - "genetically encoded qubit"
+  - "genetically encoded spin"
+  - "quantum biology"
+  - "magnetoreception"
+  - "cryptochrome magnetic"
+  - "magnetic field effect protein"
+  - "magnetic field effect fluorescence"
+  - "MagLOV"
+  - "Posner molecule"
+  - "nuclear spin cognition"
+  - "photo-CIDNP flavin"
+  - "optically detected magnetic resonance protein"
+  - "quantum sensing living cells"
+  - "spin chemistry biology"
+  - "LOV domain magnetic"
+  # --- platform watch: LOV / phototropin photochemistry (delete to stop) ---
+  - "AsLOV2"
+  - "LOV2 domain"
+  - "phototropin LOV"
+  - "flavin photocycle"
+
+# --------------------------- which venues ---------------------------------
+# Tier decides the label on the issue and whether the venue is accepted.
+# Matching is case-insensitive on the venue name returned by the API.
+venues:
+  high_impact:
+    - Nature
+    - Science
+    - Cell
+    - Nature Physics
+    - Nature Chemistry
+    - Nature Communications
+    - Nature Photonics
+    - Nature Chemical Biology
+    - Nature Biotechnology
+    - Nature Methods
+    - Nature Nanotechnology
+    - Nature Materials
+    - Nature Reviews Chemistry
+    - Nature Reviews Physics
+    - Nature Reviews Molecular Cell Biology
+    - Nature Structural & Molecular Biology
+    - Science Advances
+    - Proceedings of the National Academy of Sciences
+    - Proceedings of the National Academy of Sciences of the United States of America
+    - Journal of the American Chemical Society
+    - Angewandte Chemie International Edition
+    - Angewandte Chemie
+    - Chem
+    - Chemical Science
+    - Chemical Reviews
+    - Chemical Society Reviews
+    - Accounts of Chemical Research
+    - ACS Central Science
+    - Physical Review Letters
+    - Physical Review X
+    - PRX Quantum
+    - PRX Life
+    - npj Quantum Information
+    - Quantum
+    - eLife
+    - Annual Review of Biophysics
+    - Annual Review of Physical Chemistry
+    - Neuron
+    - Current Biology
+    - Molecular Cell
+  specialist:
+    - The Journal of Physical Chemistry Letters
+    - The Journal of Physical Chemistry B
+    - The Journal of Physical Chemistry A
+    - The Journal of Chemical Physics
+    - Physical Chemistry Chemical Physics
+    - Journal of Chemical Theory and Computation
+    - Biophysical Journal
+    - Journal of the Royal Society Interface
+    - Communications Physics
+    - Communications Chemistry
+    - Communications Biology
+    - Physical Review E
+    - Physical Review Research
+    - Physical Review A
+    - New Journal of Physics
+    - Journal of Magnetic Resonance
+    - Magnetic Resonance
+    - Photochemistry and Photobiology
+    - Photochemical & Photobiological Sciences
+    - Scientific Reports
+    - PLOS Computational Biology
+    - Quantum Reports
+    - Biochemistry
+    - Protein Science
+    - Journal of Molecular Biology
+  preprint:
+    - bioRxiv
+    - arXiv
+    - ChemRxiv
+    - medRxiv
+    - Research Square
+
+# Which tiers reach you. Remove "specialist" if you only want flagship venues.
+accept_tiers: [high_impact, specialist, preprint]
+
+# --------------------------- relevance scoring ----------------------------
+# Text is lower-cased and hyphens become spaces, so "radical-pair" == "radical pair".
+# A phrase ending in * matches as a prefix ("mitochondri*" -> mitochondrial).
+# Each phrase counts once; a hit in the TITLE counts double.
+# A candidate passes if:
+#   (a) it hits at least one `core` or `platform` phrase and total >= min_score, or
+#   (b) it hits at least one `bio` AND one `spin` phrase and total >= min_score_without_core.
+keywords:
+  core:            # weight 4 — inherently "quantum + biology"
+    - radical pair*
+    - spin correlated radical*
+    - biological qubit*
+    - protein qubit*
+    - bioqubit*
+    - genetically encoded qubit*
+    - quantum biology
+    - quantum biological
+    - magnetoreception
+    - magnetoreceptor*
+    - magnetosensitiv*
+    - magnetic field effect*
+    - posner molecule*
+    - posner cluster*
+    - calcium phosphate dimer*
+    - maglov*
+    - photo cidnp
+    - chemically induced dynamic nuclear polari*
+    - quantum zeno
+  platform:        # weight 4 — counts like `core`. The photochemistry of the
+                   # protein platforms biological qubits are built on.
+                   # Delete this group (and the platform queries) to stop tracking it.
+    - aslov2
+    - lov2 domain*
+    - avena sativa lov*
+    - phototropin*
+    - cysteinyl flavin adduct*
+    - flavin cysteinyl adduct*
+    - flavin adduct*
+    - photoadduct*
+  bio:             # weight 2
+    - cryptochrome*
+    - flavin*
+    - fmn
+    - fad
+    - flavoprotein*
+    - lov domain*
+    - lov2
+    - fluorescent protein*
+    - tryptophan
+    - in vivo
+    - living cell*
+    - live cell*
+    - e. coli
+    - c. elegans
+    - protein*
+    - enzyme*
+    - mitochondri*
+    - neuron*
+    - photoreceptor*
+    - phototropin*
+    - migratory bird*
+  spin:            # weight 2
+    - spin qubit*
+    - qubit*
+    - quantum bit*
+    - hyperfine
+    - spin coherence
+    - spin dynamics
+    - singlet triplet
+    - triplet state*
+    - odmr
+    - optically detected magnetic resonance
+    - electron paramagnetic resonance
+    - epr
+    - nuclear spin*
+    - quantum sensing
+    - quantum sensor*
+    - entangle*
+    - decoherence
+    - coherent control
+    - magnetic resonance
+  negative:        # weight -6 — common quantum-computing noise
+    - variational quantum eigensolver
+    - quantum annealing
+    - quantum machine learning
+    - quantum neural network*
+    - quantum computing for drug
+    - drug discovery
+    - quantum inspired
+    - superconducting qubit*
+    - trapped ion*
+    - stock market
+    - decision making model*
+    - quantum probability
+
+# keyword -> suggested category (first match wins, top to bottom)
+category_hints:
+  - [qubit*, biological-qubits]
+  - [genetically encoded, biological-qubits]
+  - [maglov, biological-qubits]
+  - [quantum sens*, biological-qubits]
+  - [posner*, posner]
+  - [calcium phosphate, posner]
+  - [cidnp, flavin-spin]
+  - [lov domain, lov]
+  - [lov2, lov]
+  - [microscop*, methods]
+  - [spectroscop*, methods]
+  - [cryptochrome, radical-pair]
+  - [magnetoreception, radical-pair]
+  - [radical pair*, radical-pair]
+  - [master equation, theory]
+  - [open quantum system*, theory]
+  - [simulat*, theory]
+  - [review*, reviews]

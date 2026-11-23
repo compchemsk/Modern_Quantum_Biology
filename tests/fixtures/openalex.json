@@ -1,0 +1,432 @@
+{
+ "results": [
+  {
+   "id": "https://openalex.org/W1",
+   "doi": "https://doi.org/10.9999/test.relevant.1",
+   "display_name": "TEST Coherent radical-pair spin dynamics in a cryptochrome mutant probed by pulsed magnetic resonance",
+   "publication_year": 2026,
+   "publication_date": "2026-11-10",
+   "type": "article",
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Ada Tester"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Bo Example"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Cy Placeholder"
+     }
+    }
+   ],
+   "primary_location": {
+    "source": {
+     "display_name": "Nature Communications"
+    },
+    "landing_page_url": "https://example.org/1"
+   },
+   "open_access": {
+    "oa_url": "https://example.org/1.pdf"
+   },
+   "abstract_inverted_index": {
+    "We": [
+     0
+    ],
+    "observe": [
+     1
+    ],
+    "spin-correlated": [
+     2
+    ],
+    "radical": [
+     3
+    ],
+    "pairs": [
+     4
+    ],
+    "in": [
+     5,
+     16
+    ],
+    "a": [
+     6
+    ],
+    "flavoprotein": [
+     7
+    ],
+    "and": [
+     8
+    ],
+    "measure": [
+     9
+    ],
+    "magnetic": [
+     10
+    ],
+    "field": [
+     11
+    ],
+    "effects": [
+     12
+    ],
+    "with": [
+     13
+    ],
+    "hyperfine": [
+     14
+    ],
+    "resolution": [
+     15
+    ],
+    "living": [
+     17
+    ],
+    "cells.": [
+     18
+    ]
+   }
+  },
+  {
+   "id": "https://openalex.org/W2",
+   "doi": "https://doi.org/10.9999/test.noise.2",
+   "display_name": "TEST Quantum machine learning accelerates drug discovery for protein targets",
+   "publication_year": 2026,
+   "publication_date": "2026-11-10",
+   "type": "article",
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Dee Noise"
+     }
+    }
+   ],
+   "primary_location": {
+    "source": {
+     "display_name": "Nature Communications"
+    },
+    "landing_page_url": "https://example.org/2"
+   },
+   "open_access": {
+    "oa_url": null
+   },
+   "abstract_inverted_index": {
+    "A": [
+     0
+    ],
+    "variational": [
+     1
+    ],
+    "quantum": [
+     2,
+     5
+    ],
+    "eigensolver": [
+     3
+    ],
+    "and": [
+     4
+    ],
+    "machine": [
+     6
+    ],
+    "learning": [
+     7
+    ],
+    "pipeline": [
+     8
+    ],
+    "for": [
+     9
+    ],
+    "drug": [
+     10
+    ],
+    "discovery": [
+     11
+    ],
+    "on": [
+     12
+    ],
+    "protein": [
+     13
+    ],
+    "targets.": [
+     14
+    ]
+   }
+  },
+  {
+   "id": "https://openalex.org/W3",
+   "doi": "https://doi.org/10.1038/s41586-025-09417-w",
+   "display_name": "A fluorescent-protein spin qubit",
+   "publication_year": 2026,
+   "publication_date": "2026-11-10",
+   "type": "article",
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Jacob S. Feder"
+     }
+    }
+   ],
+   "primary_location": {
+    "source": {
+     "display_name": "Nature"
+    },
+    "landing_page_url": "https://example.org/3"
+   },
+   "open_access": {
+    "oa_url": null
+   },
+   "abstract_inverted_index": {
+    "Already": [
+     0
+    ],
+    "in": [
+     1
+    ],
+    "the": [
+     2
+    ],
+    "Atlas.": [
+     3
+    ]
+   }
+  },
+  {
+   "id": "https://openalex.org/W4",
+   "doi": "https://doi.org/10.9999/test.offvenue.4",
+   "display_name": "TEST Magnetic field effect on a flavoprotein radical pair",
+   "publication_year": 2026,
+   "publication_date": "2026-11-10",
+   "type": "article",
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Off Venue"
+     }
+    }
+   ],
+   "primary_location": {
+    "source": {
+     "display_name": "Journal of Random Studies"
+    },
+    "landing_page_url": "https://example.org/4"
+   },
+   "open_access": {
+    "oa_url": null
+   },
+   "abstract_inverted_index": {
+    "radical": [
+     0
+    ],
+    "pair": [
+     1
+    ],
+    "flavin": [
+     2
+    ],
+    "magnetic": [
+     3
+    ],
+    "field": [
+     4
+    ],
+    "effect": [
+     5
+    ],
+    "protein": [
+     6
+    ]
+   }
+  },
+  {
+   "id": "https://openalex.org/W5",
+   "doi": "https://doi.org/10.9999/test.published.5",
+   "display_name": "Magnetic resonance control of reaction yields through genetically-encoded protein:flavin spin-correlated radicals in a live animal",
+   "publication_year": 2026,
+   "publication_date": "2026-11-10",
+   "type": "article",
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Shaun C. Burd"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Mark Kasevich"
+     }
+    }
+   ],
+   "primary_location": {
+    "source": {
+     "display_name": "Science"
+    },
+    "landing_page_url": "https://example.org/5"
+   },
+   "open_access": {
+    "oa_url": null
+   },
+   "abstract_inverted_index": {
+    "Genetically": [
+     0
+    ],
+    "encoded": [
+     1
+    ],
+    "spin-correlated": [
+     2
+    ],
+    "radical": [
+     3
+    ],
+    "pairs": [
+     4
+    ],
+    "controlled": [
+     5
+    ],
+    "by": [
+     6
+    ],
+    "magnetic": [
+     7
+    ],
+    "resonance": [
+     8
+    ],
+    "in": [
+     9
+    ],
+    "a": [
+     10
+    ],
+    "live": [
+     11
+    ],
+    "animal.": [
+     12
+    ]
+   }
+  },
+  {
+   "id": "https://openalex.org/W6",
+   "doi": "https://doi.org/10.9999/test.epr.6",
+   "display_name": "TEST Protein conformations mapped by pulsed EPR distance measurements",
+   "publication_year": 2026,
+   "publication_date": "2026-11-10",
+   "type": "article",
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Eve Pear"
+     }
+    }
+   ],
+   "primary_location": {
+    "source": {
+     "display_name": "Journal of the American Chemical Society"
+    },
+    "landing_page_url": "https://example.org/6"
+   },
+   "open_access": {
+    "oa_url": null
+   },
+   "abstract_inverted_index": {
+    "Double": [
+     0
+    ],
+    "electron-electron": [
+     1
+    ],
+    "resonance": [
+     2,
+     5
+    ],
+    "electron": [
+     3
+    ],
+    "paramagnetic": [
+     4
+    ],
+    "of": [
+     6
+    ],
+    "spin-labelled": [
+     7
+    ],
+    "protein": [
+     8
+    ],
+    "reveals": [
+     9
+    ],
+    "conformations.": [
+     10
+    ]
+   }
+  },
+  {
+   "id": "https://openalex.org/W7",
+   "doi": "https://doi.org/10.9999/test.posner.7",
+   "display_name": "TEST Posner molecule nuclear spin entanglement revisited with ab initio dynamics",
+   "publication_year": 2026,
+   "publication_date": "2026-11-10",
+   "type": "preprint",
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Pos Ner"
+     }
+    }
+   ],
+   "primary_location": {
+    "source": {
+     "display_name": "arXiv (Cornell University)"
+    },
+    "landing_page_url": "https://example.org/7"
+   },
+   "open_access": {
+    "oa_url": null
+   },
+   "abstract_inverted_index": {
+    "Posner": [
+     0
+    ],
+    "molecule": [
+     1
+    ],
+    "nuclear": [
+     2
+    ],
+    "spin": [
+     3
+    ],
+    "coherence": [
+     4
+    ],
+    "and": [
+     5
+    ],
+    "entanglement": [
+     6
+    ],
+    "from": [
+     7
+    ],
+    "first": [
+     8
+    ],
+    "principles.": [
+     9
+    ]
+   }
+  }
+ ]
+}

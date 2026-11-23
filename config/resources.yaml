@@ -1,0 +1,51 @@
+# Background reading, tools and community — rendered into RESOURCES.md and the
+# website's Library. Edit here; never edit RESOURCES.md by hand.
+
+path:
+  - "*Life on the Edge* — the big picture, in a weekend."
+  - "Hore & Mouritsen (2016), then Rodgers & Hore (2009) — the radical-pair mechanism properly."
+  - "Kim et al. (2021) and Cao et al. (2020) — the state of the whole field."
+  - "Breuer & Petruccione, chapters 3–4 — the open-quantum-systems tools you will actually use."
+  - "Then the Biological qubits section of the Atlas."
+
+books:
+  - group: Getting oriented
+    items:
+      - {title: "Life on the Edge: The Coming of Age of Quantum Biology", authors: "J. McFadden & J. Al-Khalili", year: 2014, why: "Readable tour of tunnelling, photosynthesis, the avian compass and more. The best first book."}
+      - {title: "Quantum Effects in Biology", authors: "M. Mohseni, Y. Omar, G. S. Engel & M. B. Plenio (eds.)", publisher: "Cambridge University Press", year: 2014, why: "Graduate-level edited volume; chapters on radical pairs, energy transfer and decoherence by the people who did the work."}
+      - {title: "What Is Life?", authors: "E. Schrödinger", year: 1944, why: "The historical starting point the field still quotes."}
+  - group: Spin chemistry & magnetic resonance
+    items:
+      - {title: "Introduction to Dynamic Spin Chemistry", authors: "H. Hayashi", publisher: "World Scientific", year: 2004, why: "Compact textbook on radical-pair spin dynamics and magnetic field effects, including biochemical reactions."}
+      - {title: "Principles of Pulse Electron Paramagnetic Resonance", authors: "A. Schweiger & G. Jeschke", publisher: "Oxford University Press", year: 2001, why: "The reference for spin Hamiltonians and pulse sequences — essential for ODMR-type protein-qubit work."}
+      - {title: "Electron Paramagnetic Resonance: Elementary Theory and Practical Applications", authors: "J. A. Weil & J. R. Bolton", publisher: "Wiley", year: 2007, why: "Gentler EPR introduction; good for hyperfine and g-tensor basics."}
+      - {title: "Spin Dynamics: Basics of Nuclear Magnetic Resonance", authors: "M. H. Levitt", publisher: "Wiley", year: 2008, why: "Spin operators, density matrices and relaxation, directly reusable for radical pairs and nuclear-spin problems."}
+  - group: Open quantum systems & quantum information
+    items:
+      - {title: "The Theory of Open Quantum Systems", authors: "H.-P. Breuer & F. Petruccione", publisher: "Oxford University Press", year: 2002, why: "Master equations, Lindblad and Redfield theory, decoherence — the core for any ‘does coherence survive in a protein?’ question."}
+      - {title: "Quantum Computation and Quantum Information", authors: "M. A. Nielsen & I. L. Chuang", publisher: "Cambridge University Press", year: 2010, why: "Qubits, gates, fidelity and entanglement — the language protein-qubit papers borrow."}
+      - {title: "Quantum Dissipative Systems", authors: "U. Weiss", publisher: "World Scientific", year: 2012, why: "Spin–boson model and system–bath theory in depth."}
+
+reviews:
+  - {cite: "P. J. Hore & H. Mouritsen, Annu. Rev. Biophys. 45, 299–344 (2016)", title: "The radical-pair mechanism of magnetoreception", doi: 10.1146/annurev-biophys-032116-094545, why: "The standard review of the avian compass."}
+  - {cite: "C. T. Rodgers & P. J. Hore, PNAS 106, 353–360 (2009)", title: "Chemical magnetoreception in birds: the radical pair mechanism", doi: 10.1073/pnas.0711968106, why: "Clear physical introduction to radical-pair magnetosensitivity."}
+  - {cite: "T. Ritz, S. Adem & K. Schulten, Biophys. J. 78, 707–718 (2000)", title: "A model for photoreceptor-based magnetoreception in birds", doi: 10.1016/S0006-3495(00)76629-X, why: "Proposed cryptochrome as the compass molecule."}
+  - {cite: "K. Schulten, C. E. Swenberg & A. Weller, Z. Phys. Chem. NF 111, 1–5 (1978)", title: "A biomagnetic sensory mechanism based on magnetic field modulated coherent electron spin motion", why: "Where the radical-pair compass idea began."}
+  - {cite: "U. E. Steiner & T. Ulrich, Chem. Rev. 89, 51–147 (1989)", title: "Magnetic field effects in chemical kinetics and related phenomena", doi: 10.1021/cr00091a003, why: "Encyclopaedic foundation of spin chemistry."}
+  - {cite: "K. Maeda et al., Nature 453, 387–390 (2008)", title: "Chemical compass model of avian magnetoreception", doi: 10.1038/nature06834, why: "First demonstration that a molecule can sense the direction of an Earth-strength field."}
+  - {cite: "N. Lambert et al., Nat. Phys. 9, 10–18 (2013)", title: "Quantum biology", doi: 10.1038/nphys2474, why: "Influential field-wide review."}
+  - {cite: "J. Cao et al., Sci. Adv. 6, eaaz4888 (2020)", title: "Quantum biology revisited", doi: 10.1126/sciadv.aaz4888, why: "Critical reassessment of what is and isn't established."}
+  - {cite: "Y. Kim et al., Quantum Rep. 3, 80–126 (2021)", title: "Quantum biology: an update and perspective", doi: 10.3390/quantum3010006, why: "Broad open-access survey: enzymes, photosynthesis, spins, DNA, fluorescent proteins."}
+  - {cite: "I. K. Kominis, Phys. Rev. E 80, 056115 (2009)", title: "Quantum Zeno effect explains magnetic-sensitive radical-ion-pair reactions", doi: 10.1103/PhysRevE.80.056115, why: "The open-quantum-systems view of radical-pair recombination."}
+
+software:
+  - {name: RadicalPy, url: "https://github.com/Spin-Chemistry-Labs/radicalpy", what: "Object-oriented Python framework for radical-pair spin dynamics: Hamiltonians, relaxation, kinetics, MARY curves. pip install radicalpy"}
+  - {name: MolSpin, url: "https://molspin.eu", what: "General spin-dynamics package from the Solov'yov group, for large radical-pair systems. Nielsen & Solov'yov, J. Chem. Phys. 151, 194105 (2019)."}
+  - {name: EasySpin, url: "https://easyspin.org", what: "MATLAB toolbox for simulating EPR spectra; the field standard. Stoll & Schweiger, J. Magn. Reson. 178, 42–55 (2006)."}
+  - {name: QuTiP, url: "https://qutip.org", what: "Python toolbox for open quantum systems: master equations, trajectories, pulse control. Johansson, Nation & Nori, Comput. Phys. Commun. 184, 1234 (2013)."}
+  - {name: ORCA, url: "https://orcaforum.kofo.mpg.de", what: "Quantum-chemistry package widely used for hyperfine and g-tensors of flavin and tryptophan radicals."}
+
+community:
+  - {name: "Quantum Biology Institute", url: "https://www.quantumbiology.org/", what: "Research and community organisation co-founded by C. D. Aiello."}
+  - {name: "Leverhulme Quantum Biology Doctoral Training Centre", what: "University of Surrey doctoral centre behind the Kim et al. (2021) review."}
+  - {name: "Spin Chemistry Community", url: "https://github.com/Spin-Chemistry-Labs/radicalpy", what: "Discord community run by the RadicalPy developers (invite on their page)."}

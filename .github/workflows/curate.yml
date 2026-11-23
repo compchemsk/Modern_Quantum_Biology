@@ -1,0 +1,62 @@
+name: Curate candidate
+
+# Fires when someone comments /approve or /reject on a candidate issue, or adds
+# the label "approve" / "reject". Two locks protect it:
+#   1. this workflow only starts for repository owners, members or collaborators;
+#   2. scripts/curate.py then accepts only the curators listed in config/watch.yaml.
+on:
+  issue_comment:
+    types: [created]
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: atlas-write
+  cancel-in-progress: false
+
+jobs:
+  curate:
+    if: >-
+      github.event.issue.pull_request == null &&
+      contains(github.event.issue.labels.*.name, 'candidate') &&
+      (
+        (github.event_name == 'issue_comment' &&
+          contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association) &&
+          (startsWith(github.event.comment.body, '/approve') || startsWith(github.event.comment.body, '/reject')))
+        ||
+        (github.event_name == 'issues' &&
+          (github.event.label.name == 'approve' || github.event.label.name == 'reject'))
+      )
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --disable-pip-version-check pyyaml==6.0.2
+
+      - name: Apply the decision
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/curate.py decide
+
+      - name: Commit
+        run: |
+          git config user.name  "bioqubit-atlas-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data README.md CITATION.cff RESOURCES.md bibliography docs .github/ISSUE_TEMPLATE
+          if ! git diff --cached --quiet; then
+            git commit -F <(python -c 'import json;print(json.load(open("out/result.json")).get("commit","curate"))')
+            git pull --rebase --quiet
+            git push
+          fi
+
+      - name: Reply on the issue and close it
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/curate.py finalize
