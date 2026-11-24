@@ -1,2 +1,4 @@
 # Candidates already proposed by the watcher (one key per line: DOI, arxiv:ID or title:...).
 # Maintained automatically — the watcher never proposes these again.
+arxiv:2611.17497  # 2026-11-24 The radical pair mechanism can generate nuclear-spin entanglement
+arxiv:2611.21293  # 2026-11-24 Radiofrequency disorientation in migratory birds: radical pairs or a separate sensory syst
